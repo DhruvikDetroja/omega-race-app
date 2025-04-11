@@ -68,9 +68,7 @@ def generate_excel(players):
     return output
 
 # ===================== STREAMLIT UI ========================
-# Load and display logo
-logo = Image.open("logo.png")  # Adjust path if it's inside a folder
-st.image(logo, width=200)  # You can tweak the width
+
 
 st.markdown(
     """
