@@ -69,9 +69,11 @@ def generate_excel(players):
     return output
 
 # ===================== STREAMLIT UI ========================
+st.set_page_config(
+    page_title="Omega Race Sheet Generator",
+    layout="centered",
+)
 
-
-# ✅ 3. Now show the logo and content
 st.markdown(
     """
     <div style='text-align: center;'>
@@ -81,8 +83,6 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
-st.set_page_config(page_title="Omega Race Sheet Generator", layout="centered")
 st.title("🏆 Omega Race Sheet Generator (Week 2 Only)")
 st.write("Upload your `Player_Data.txt` and download the formatted Excel sheet.")
 st.write("Built by Dhruvik aka `Elephant Fart Lol`")
