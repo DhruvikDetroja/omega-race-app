@@ -70,10 +70,6 @@ def generate_excel(players):
 
 # ===================== STREAMLIT UI ========================
 
-st.set_page_config(
-    page_title="Omega Race Sheet Generator",
-    layout="centered",
-)
 
 # ✅ 3. Now show the logo and content
 st.markdown(
@@ -107,3 +103,8 @@ if uploaded_file:
             file_name="Omega_Race_sheet.xlsx",
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
+
+st.set_page_config(
+    page_title="Omega Race Sheet Generator",
+    layout="centered",
+)
