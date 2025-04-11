@@ -70,15 +70,19 @@ def generate_excel(players):
 
 # ===================== STREAMLIT UI ========================
 
-st.set_page_config(page_title="Omega Race Sheet Generator", layout="centered")
+st.set_page_config(
+    page_title="Omega Race Sheet Generator",
+    layout="centered",
+)
 
-# ✅ THEN display logo
+# ✅ 3. Now show the logo and content
 st.markdown(
     """
     <div style='text-align: center;'>
         <img src='https://raw.githubusercontent.com/DhruvikDetroja/omega-race-app/main/logo.png' width='200'>
     </div>
-    """, unsafe_allow_html=True
+    """,
+    unsafe_allow_html=True
 )
 
 
