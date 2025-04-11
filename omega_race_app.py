@@ -70,6 +70,7 @@ def generate_excel(players):
 st.set_page_config(page_title="Omega Race Sheet Generator", layout="centered")
 st.title("🏆 Omega Race Sheet Generator (Week 2 Only)")
 st.write("Upload your `Player_Data.txt` and download the formatted Excel sheet.")
+st.write("Built by Dhruvik aka `Elephant Fart Lol`")
 
 uploaded_file = st.file_uploader("Upload Player_Data.txt", type="txt")
 
