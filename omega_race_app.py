@@ -4,6 +4,7 @@ from io import BytesIO
 from openpyxl import Workbook
 from openpyxl.styles import Font
 from PIL import Image
+import pandas as pd
 
 # === Coefficient Table for 2nd Week of April ===
 coefficient_data = [
@@ -69,6 +70,9 @@ def generate_excel(players):
 
 # ===================== STREAMLIT UI ========================
 
+st.set_page_config(page_title="Omega Race Sheet Generator", layout="centered")
+
+# ✅ THEN display logo
 st.markdown(
     """
     <div style='text-align: center;'>
