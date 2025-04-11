@@ -3,6 +3,7 @@ import re
 from io import BytesIO
 from openpyxl import Workbook
 from openpyxl.styles import Font
+from PIL import Image
 
 # === Coefficient Table for 2nd Week of April ===
 coefficient_data = [
@@ -67,6 +68,18 @@ def generate_excel(players):
     return output
 
 # ===================== STREAMLIT UI ========================
+# Load and display logo
+logo = Image.open("logo.png")  # Adjust path if it's inside a folder
+st.image(logo, width=200)  # You can tweak the width
+
+st.markdown(
+    """
+    <div style='text-align: center;'>
+        <img src='https://raw.githubusercontent.com/DhruvikDetroja/omega-race-app/main/logo.png' width='200'>
+    </div>
+    """, unsafe_allow_html=True
+)
+
 st.set_page_config(page_title="Omega Race Sheet Generator", layout="centered")
 st.title("🏆 Omega Race Sheet Generator (Week 2 Only)")
 st.write("Upload your `Player_Data.txt` and download the formatted Excel sheet.")
