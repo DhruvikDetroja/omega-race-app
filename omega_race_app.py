@@ -104,7 +104,3 @@ if uploaded_file:
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
 
-st.set_page_config(
-    page_title="Omega Race Sheet Generator",
-    layout="centered",
-)
